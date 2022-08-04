@@ -9,11 +9,11 @@
         <body>
 
             <form th:action="@{/addUser}" method="post">
-                <input type="text" th:name="name" th:placeholder="${name}" />
+                <input type="text" th:name="name" th:placeholder="name" />
                 <input type="submit" value="Create" />
             </form>
 
-            <td><a th:href="@{/users}">Show all names</a></td>
+            <a th:href="@{/users}">Show all names</a>
         </body>
 
 </html>

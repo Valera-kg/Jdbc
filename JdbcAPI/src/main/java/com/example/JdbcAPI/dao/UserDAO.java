@@ -10,7 +10,7 @@ import java.util.List;
 public class UserDAO {
     String url= "jdbc:postgresql://localhost:5432/postgres";
     String username = "postgres";
-    String password = "123";
+    String password = "admin";
 
     public void create(User user){
 
