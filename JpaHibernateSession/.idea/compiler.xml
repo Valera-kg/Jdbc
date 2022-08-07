@@ -6,15 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="doIt_14" />
+        <module name="doIt-6" />
         <module name="doIt_6" />
         <module name="SpringMVC" />
-        <module name="doIt_9" />
-        <module name="doIt-6" />
+        <module name="doIt_14" />
         <module name="doIt_13" />
         <module name="doIt_11" />
         <module name="alishev_15" />
         <module name="JpaHibernateSession" />
+        <module name="doIt_9" />
       </profile>
     </annotationProcessing>
   </component>
