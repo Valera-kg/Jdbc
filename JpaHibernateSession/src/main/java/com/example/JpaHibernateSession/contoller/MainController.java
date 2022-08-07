@@ -8,11 +8,17 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping("/")
 public class MainController {
 
     @Autowired
     private UserDAO userDAO;
+
+//----------index--------------------
+    @GetMapping("/")
+    public String showIndex() {
+        return "index";
+    }
+//----------      --------------------
 
 //----------create--------------------
     @GetMapping("/addUser")
