@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.example</groupId>
-  <artifactId>doIt_6</artifactId>
+  <artifactId>JpaRepositiry</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>doIt_6 Maven Webapp</name>
+  <name>JpaRepositiry Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -124,7 +124,7 @@
   </dependencies>
 
   <build>
-    <finalName>doIt_6</finalName>
+    <finalName>JpaRepositiry</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
