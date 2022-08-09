@@ -1,4 +1,4 @@
-package com.example.heroku;
+package com.example.springJpaRepository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
