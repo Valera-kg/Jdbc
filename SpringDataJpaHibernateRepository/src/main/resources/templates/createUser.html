@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Create person (thymeleaf)</title>
+</head>
+
+<body>
+
+    <div>
+        <form autocomplete="off" th:action="@{'/addUser'}" th:object="${userNew}" method="post">
+            <input type="text" th:name="name" th:field="*{name}" />
+            <input type="submit" value="Create" />
+        </form>
+
+        <a th:href="@{'/users'}">Show all names</a>
+    </div>
+
+</body>
+
+</html>
+

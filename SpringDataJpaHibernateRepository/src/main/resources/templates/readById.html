@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"  lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>One by id</title>
+</head>
+    <body>
+    <table>
+        <thead>
+        <tr>
+            <th>No</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tr>
+            <td th:text="${personById.id}"> </td>
+            <td th:text="${personById.name}"></td>
+        </tr>
+    </table>
+
+    <a th:href="@{'/users'}">Show all names</a>
+    <a th:href="@{'/addUser'}">Back to add new user</a>
+    <a th:href="@{/update/{id}(id=${personById.id})}">Back to edit</a>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>List of persons (thymeleaf)</title>
+</head>
+
+    <body>
+<!--предупреждение если список пуст, шрифт+цвет шрифта -->
+    <th:block th:if="${#lists.isEmpty(personList)}">
+        <p style ="background: #eee; font-style: italic; font-size: x-large; color: red">
+            List of persons is empty!
+        </p>
+    </th:block>
+    <h1>List of Personal (number of persons: <th:block th:text="${#lists.size(personList)}">100</th:block>)</h1>
+    <table>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+            </tr>
+
+            <tr th:each="user : ${personList}">
+                <td><a th:href="@{/user/{id}(id=${user.id})}"><span th:text="${user.id}"></span></a></td>
+                <td th:text="${user.name}"></td>
+                <td><a th:href="@{/update/{id}(id=${user.id})}">Edit</a></td>
+                <td><a th:href="@{/delete/{id}(id=${user.id})}">Delete</a></td>
+            </tr>
+    </table>
+
+    <h2> <a href="/addUser">back to add new user</a> </h2>
+    <h2> <a href="/deleteAll">Delete All!</a> </h2>
+    </body>
+
+</html>
+
